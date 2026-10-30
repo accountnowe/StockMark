@@ -28,7 +28,10 @@ jobs:
           node-version: 22
           cache: npm
 
-      - run: npm ci
+      # npm ci is deliberately not used: this lockfile was written on Windows and
+      # only records the win32 rolldown binary, so a clean Linux install cannot
+      # find its native bundler binding (npm/cli#4828). npm install adds it.
+      - run: npm install --no-audit --no-fund
 
       # Server-only secrets are deliberately absent: the Pages build has no
       # backend, so the app falls back to its bundled demo quotes and guest mode.
