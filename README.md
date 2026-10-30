@@ -20,6 +20,20 @@ If the key is missing or Alpha Vantage reaches its free-tier limit, the app uses
 - `npm run build` — create a production build
 - `npm run preview` — preview the production build
 
+## Hosting
+
+GitHub Pages serves static files only, so it cannot run `server/index.js`. A Pages deploy is the
+**demo build**: no sign-up, no saved portfolios, no admin settings, and quotes come from the bundled
+fallback data because the Alpha Vantage proxy is absent. It is still a good public showcase of the UI.
+
+`.github/workflows/pages.yml` builds the app with `PAGES_BASE=/StockMark/` and publishes `dist/` to
+Pages. That variable only exists inside the workflow, so `npm run dev` and a plain `npm run build`
+keep serving from `/` exactly as before. Change the value if the repository is renamed.
+
+The full app, with accounts and persistence, needs a host that runs Node and a writable disk (Render,
+Fly.io, Railway, or your own VPS). `data/stockmark.db` is gitignored because it holds password hashes
+and real portfolio rows.
+
 ## Notes
 
 - Guests keep their watchlist, paper cash, holdings, transactions, recent searches and budget in browser `localStorage`.
