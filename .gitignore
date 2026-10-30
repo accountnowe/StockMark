@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+
+# Local account database and its write-ahead log: password hashes and real
+# portfolio rows. Never commit this.
+data/
+
+# Editor and agent caches
+.opencode/
+.vscode/
+.DS_Store

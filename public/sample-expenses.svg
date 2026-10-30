@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <rect width="1200" height="800" fill="#f4f1e8"/>
+  <rect x="90" y="55" width="1020" height="690" rx="8" fill="#fffdf7" stroke="#d7d0c2" stroke-width="3"/>
+  <text x="145" y="125" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#242a35">HOUSEHOLD EXPENSE SUMMARY</text>
+  <text x="145" y="158" font-family="Arial, sans-serif" font-size="18" fill="#697386">Monthly budget · October 2026</text>
+  <line x1="145" y1="195" x2="1055" y2="195" stroke="#d7d0c2" stroke-width="2"/>
+  <text x="155" y="242" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#3b4350">CATEGORY</text>
+  <text x="900" y="242" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#3b4350">AMOUNT</text>
+  <g font-family="Arial, sans-serif" font-size="23" fill="#303846">
+    <text x="155" y="300">Rent</text><text x="900" y="300">$1,200.00</text>
+    <text x="155" y="360">Groceries</text><text x="900" y="360">$540.00</text>
+    <text x="155" y="420">Transport</text><text x="900" y="420">$260.00</text>
+    <text x="155" y="480">Utilities</text><text x="900" y="480">$185.00</text>
+    <text x="155" y="540">Healthcare</text><text x="900" y="540">$120.00</text>
+    <text x="155" y="600">Entertainment</text><text x="900" y="600">$150.00</text>
+  </g>
+  <line x1="145" y1="635" x2="1055" y2="635" stroke="#d7d0c2" stroke-width="2"/>
+  <text x="155" y="690" font-family="Arial, sans-serif" font-size="25" font-weight="700" fill="#242a35">TOTAL EXPENSES</text>
+  <text x="900" y="690" font-family="Arial, sans-serif" font-size="25" font-weight="700" fill="#256b57">$2,455.00</text>
+</svg>
